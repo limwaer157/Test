@@ -27,25 +27,25 @@ void PrintFirstArray(string[] text)
 }
 
 
-void SaveNumbers(string[] text, string[] newText)
+void SaveNumbers(string[] text, string[] new_text)
 {
     for (int i = 0, j = 0; i < string_size; i++)
     {
         if (text[i].Length <= 3)
         {
-            newText[j] = text[i];
+            new_text[j] = text[i];
             j++;
         }
     }
 }
 
-void PrintSecondArry(string[] newText)
+void PrintSecondArry(string[] new_text)
 {
-    Console.Write(string.Join(",", newText));
+    Console.Write(string.Join(",", new_text));
 }
 
 FullArray(text);
 PrintFirstArray(text);
-string[] newText = new string[size_word];
-SaveNumbers(text, newText);
-PrintSecondArry(newText);
+string[] new_text = new string[size_word];
+SaveNumbers(text, new_text);
+PrintSecondArry(new_text);
